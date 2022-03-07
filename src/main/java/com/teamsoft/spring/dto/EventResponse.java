@@ -1,15 +1,14 @@
-package com.teamsoft.spring.domain;
+package com.teamsoft.spring.dto;
 
 import com.teamsoft.spring.constant.EventStatus;
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
+@Builder
 @Data
-public class Event {
-
-    private Long id;
-
+public class EventResponse {
     private Long placeId;
     private String eventName;
     private EventStatus eventStatus;
@@ -18,7 +17,4 @@ public class Event {
     private Integer currentNumberOfPeople;
     private Integer capacity;
     private String memo;
-
-    private LocalDateTime createdAt;
-    private LocalDateTime modifiedAt;
 }

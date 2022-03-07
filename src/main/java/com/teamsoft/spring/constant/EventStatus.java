@@ -1,5 +1,5 @@
 package com.teamsoft.spring.constant;
 
-public enum EventStatus {
+public enum  EventStatus {
     PENDING, OPENED, CLOSED, CANCELLED, ABORTED
 }

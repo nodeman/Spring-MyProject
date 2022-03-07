@@ -36,6 +36,8 @@ public class AdminController {
     @GetMapping("/places/{placeId}")
     public String adminPlaceDetail(@PathVariable Long placeId) {
         System.out.println(placeId);
+        Map<String, Object> map = new HashMap<>();
+
         return "admin/place-detail";
     }
 

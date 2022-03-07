@@ -1,22 +1,16 @@
-package com.teamsoft.spring.domain;
+package com.teamsoft.spring.dto;
 
 import com.teamsoft.spring.constant.PlaceType;
+import lombok.Builder;
 import lombok.Data;
 
-import java.time.LocalDateTime;
-
+@Builder
 @Data
-public class Place {
-
-    private Long id;
-
+public class PlaceRequest {
     private PlaceType placeType;
     private String placeName;
     private String address;
     private String phoneNumber;
     private Integer capacity;
     private String memo;
-
-    private LocalDateTime createdAt;
-    private LocalDateTime modifiedAt;
 }
